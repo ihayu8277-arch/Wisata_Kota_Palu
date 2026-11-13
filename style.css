@@ -1,3 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
 body {
     padding-top: 90px;
     background-color: #b8972d;
@@ -526,11 +539,11 @@ p {
 .site-footer {
     background-color: #12281e;
     color: #d1dcd5;
-    width: 100vw;
+    width: 100%;
     position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
+    left: 0;
+    right: 0;
+    margin-left: 0;
     padding-top: 60px;
     padding-bottom: 20px;
 
@@ -649,4 +662,55 @@ p {
 
 .about-tentang p {
     text-align: justify;
+}
+
+@media screen and (max-width: 1024px) {
+
+    header {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    nav {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .about-section,
+    .about-section-sejarah,
+    .sejarah-section,
+    .destinasi-section,
+    .cerita-section {
+        padding: 35px;
+    }
+
+    .about-container,
+    .sejarah-container,
+    .cerita-container {
+        gap: 25px;
+    }
+
+    .banner h1 {
+        font-size: 42px;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:760px) {
+    .md-grid-2 {
+        grid-template-columns: 1fr 1fr;
+
+    }
+}
+
+@media (max-width:1020px) {
+    .lg-grid-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
