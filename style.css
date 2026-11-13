@@ -744,16 +744,14 @@ p {
 }
 
 
-/* =================================
    RESPONSIVE HP
-================================= */
 @media screen and (max-width: 760px) {
 
     body {
         padding-top: 130px;
     }
 
-    /* HEADER */
+    
     header {
         display: flex;
         flex-direction: column;
@@ -842,7 +840,7 @@ p {
     }
 
     .card img {
-        height: 300px;
+        height: 500px;
     }
 
     .grid {
