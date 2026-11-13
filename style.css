@@ -702,6 +702,165 @@ p {
     }
 }
 
+/* =================================
+   RESPONSIVE TABLET
+================================= */
+@media screen and (max-width: 1024px) {
+
+    header {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    nav {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .about-section,
+    .about-section-sejarah,
+    .sejarah-section,
+    .destinasi-section,
+    .cerita-section {
+        padding: 35px;
+    }
+
+    .about-container,
+    .sejarah-container,
+    .cerita-container {
+        gap: 25px;
+    }
+
+    .banner h1 {
+        font-size: 42px;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    .footer-container {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =================================
+   RESPONSIVE HP
+================================= */
+@media screen and (max-width: 760px) {
+
+    body {
+        padding-top: 130px;
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .navbar a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    /* BANNER */
+    .banner {
+        min-height: 65vh;
+        padding: 25px 15px;
+    }
+
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .banner p {
+        font-size: 15px;
+    }
+
+    .banner-buttons {
+        flex-wrap: wrap;
+    }
+
+    /* ABOUT */
+    .about-section,
+    .about-section-sejarah,
+    .sejarah-section,
+    .destinasi-section,
+    .cerita-section {
+        padding: 25px 15px;
+        border-radius: 12px;
+    }
+
+    .about-container,
+    .sejarah-container,
+    .cerita-container {
+        flex-direction: column;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .about-image,
+    .cerita-image {
+        width: 100%;
+    }
+
+    .about-text,
+    .about-text-sejarah,
+    .sejarah-text,
+    .cerita-text {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about-text h2,
+    .sejarah-text h2,
+    .cerita-text h2 {
+        font-size: 28px;
+    }
+
+    /* DESTINASI DAN GALERI */
+    .destinasi-grid,
+    .gridcard {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+    .grid {
+        padding: 15px;
+    }
+
+    /* FOOTER */
+    .footer-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-col {
+        min-width: 100%;
+    }
+
+}
+
 @media (max-width:760px) {
     .md-grid-2 {
         grid-template-columns: 1fr 1fr;
